@@ -17,7 +17,7 @@ services:
     env_file: .env
     volumes:
       - static:/backend_static/
-      - media:/app/media/
+      - media:/media/
 
   frontend:
     image: little4one/kittygram_frontend
