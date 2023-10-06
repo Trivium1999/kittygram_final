@@ -35,5 +35,5 @@ services:
     ports:
       - 9000:80
     volumes:
-      - static:/app/static/
-      - media:/app/media/
+      - static:/etc/nginx/html/static/
+      - media:/etc/nginx/html/media/
