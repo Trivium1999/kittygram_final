@@ -4,7 +4,6 @@ volumes:
   pg_data:
   static:
   media:
-  static_backend:
 
 services:
 
@@ -18,7 +17,7 @@ services:
     build: ./backend/
     env_file: .env
     volumes:
-      - static_backend:/app/static/
+      - static:/app/static/
       - media:/app/media/
     depends_on:
       - db
@@ -36,6 +35,5 @@ services:
     ports:
       - 9000:80
     volumes:
-      - static_backend:/etc/nginx/html/static/
       - static:/static/
-      - media:/etc/nginx/html/media/
+      - media:/media/
