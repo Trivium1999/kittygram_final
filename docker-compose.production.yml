@@ -16,20 +16,23 @@ services:
     image: little4one/kittygram_backend
     env_file: .env
     volumes:
-      - static:/backend_static/
-      - media:/media/
+      - static:/app/static/
+      - media:/app/media/
+    depends_on:
+      - db
 
   frontend:
     image: little4one/kittygram_frontend
     env_file: .env
     command: cp -r /app/build/. /staticfiles/
     volumes:
-      - static:/staticfiles/
+      - static:/app/staticfiles/
 
   gateway:
     image: little4one/kittygram_gateway
+    env_file: .env
     ports:
       - 9000:80
     volumes:
       - static:/static/
-      - media:/media
+      - media:/app/media
