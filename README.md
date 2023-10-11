@@ -1,26 +1,45 @@
-#  Как работать с репозиторием финального задания
+#  Kittygram
+Блог для любителей котиков. Можно добавлять фото, имя, цвет и достижения любимых питомцев.
 
-## Что нужно сделать
+#  В проекте были использованы технологии:
+- Django REST
+- Python 3.9
+- Gunicorn
+- Nginx
+- JS
+- Node.js
+- PostgreSQL
+- Docker
 
-Настроить запуск проекта Kittygram в контейнерах и CI/CD с помощью GitHub Actions
-
-## Как проверить работу с помощью автотестов
-
-В корне репозитория создайте файл tests.yml со следующим содержимым:
-```yaml
-repo_owner: ваш_логин_на_гитхабе
-kittygram_domain: полная ссылка (https://доменное_имя) на ваш проект Kittygram
-taski_domain: полная ссылка (https://доменное_имя) на ваш проект Taski
-dockerhub_username: ваш_логин_на_докерхабе
+#  Запуск проекта из репозитория GitHub:
+1. Клонируйте репозиторий на свой компьютер
+2. Запустите:
+```
+sudo docker compose -f docker-compose.yml up -d
 ```
 
-Скопируйте содержимое файла `.github/workflows/main.yml` в файл `kittygram_workflow.yml` в корневой директории проекта.
+# Запуск проекта из образов DockerHub:
+1. Создайте папку, в которой будет храниться проект
+2. Скачайте файл ```docker-compose.production.yml``` и запустите его командой:
+```
+sudo docker compose -f docker-compose.yml up -d
+```
 
-Для локального запуска тестов создайте виртуальное окружение, установите в него зависимости из backend/requirements.txt и запустите в корневой директории проекта `pytest`.
+### Миграции:
+```
+sudo docker compose -f [имя-файла-docker-compose.yml] exec backend python manage.py migrate
+```
+### Сбор статики:
+```
+sudo docker compose -f [имя-файла-docker-compose.yml] exec backend python manage.py collectstatic
 
-## Чек-лист для проверки перед отправкой задания
+sudo docker compose -f [имя-файла-docker-compose.yml] exec backend cp -r /static/. /backend_static/static/
+```
 
-- Проект Taski доступен по доменному имени, указанному в `tests.yml`.
-- Проект Kittygram доступен по доменному имени, указанному в `tests.yml`.
-- Пуш в ветку main запускает тестирование и деплой Kittygram, а после успешного деплоя вам приходит сообщение в телеграм.
-- В корне проекта есть файл `kittygram_workflow.yml`.
+##  Остановка контейнеров:
+```
+sudo docker compose -f docker-compose.yml down
+```
+
+## Автор(devops)
+Анна Романова
