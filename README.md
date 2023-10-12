@@ -3,7 +3,6 @@
 #  Kittygram
 Блог для любителей котиков. Можно добавлять фото, имя, цвет и достижения любимых питомцев.
 
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 #  В проекте были использованы технологии:
 - Django REST
 - Python 3.9
