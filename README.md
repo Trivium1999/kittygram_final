@@ -1,4 +1,5 @@
-![Build Status](https://github.com/Trivium1999/kittygram_final/workflows/main.yml/badge.svg)](https://github.com/Trivium1999/kittygram_final/actions/workflows/main.yml)
+[![Build Status](https://github.com/Trivium1999/kittygram_final/workflows/main.yml/badge.svg)](https://github.com/Trivium1999/kittygram_final/actions/workflows/main.yml)
+[![Build Status](https://github.com/Trivium1999/kittygram_final/workflows/main/badge.svg)](https://github.com/Trivium1999/kittygram_final/actions/workflows/main.yml)
 
 [![Build Status](https://github.com/Trivium1999/kittygram_final.svg?branch=main)](https://travis-ci.com/username/projectname)
 
