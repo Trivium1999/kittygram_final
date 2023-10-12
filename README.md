@@ -1,8 +1,4 @@
-[![Build Status](https://github.com/Trivium1999/kittygram_final/workflows/main.yml/badge.svg)](https://github.com/Trivium1999/kittygram_final/actions/workflows/main.yml)
-<code>if (condition) {
-[![Build Status](https://github.com/Trivium1999/kittygram_final/workflows/Main/badge.svg)](https://github.com/Trivium1999/kittygram_final/actions/workflows/Main.yml)
-}</code>
-[![Build Status](https://github.com/Trivium1999/kittygram_final.svg?branch=main)](https://travis-ci.com/username/projectname)
+[![.github/workflows/main.yml](https://github.com/Trivium1999/kittygram_final/actions/workflows/main.yml/badge.svg)](https://github.com/Trivium1999/kittygram_final/actions/workflows/main.yml)
 
 #  Kittygram
 Блог для любителей котиков. Можно добавлять фото, имя, цвет и достижения любимых питомцев.
