@@ -1,5 +1,10 @@
+![Build Status](https://github.com/Trivium1999/kittygram_final/workflows/main.yml/badge.svg)](https://github.com/Trivium1999/kittygram_final/actions/workflows/main.yml)
+
+[![Build Status](https://github.com/Trivium1999/kittygram_final.svg?branch=main)](https://travis-ci.com/username/projectname)
+
 #  Kittygram
 Блог для любителей котиков. Можно добавлять фото, имя, цвет и достижения любимых питомцев.
+
 ![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 #  В проекте были использованы технологии:
 - Django REST
